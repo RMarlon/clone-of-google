@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #202124;
+}
+
+.navegation {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.navegation ul li a {
+    color: #FFFF;
+}
+
+.under {
+    margin-right: 10px;
+}
+
+.navegation ul .under:hover {
+    text-decoration: underline;
+}
+
+.navegation ul .img_app {
+    width: 25px;
+    height: 25px;
+    transition: background 0.2s;
+}
+
+.navegation ul .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+.navegation ul .img:hover {
+    border-radius: 50%;
+    background-color: #313134;
+}
+
+li .avatar {
+    width: 38px;
+    height: 38px;
+    margin: 8px 15px;
+    padding: 2px;
+}
+
+li .avatar:hover {
+    background: #313134;
+    border: 1px solid #313134;
+    border-radius: 50%;
+}
+
+.section_container {
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_google{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+aside {
+    border: 1px solid #313134;
+    display: flex;
+    border-radius: 24px;
+    border: 1px solid #FFFF;
+}
+
+aside:hover{
+    background: #313134;
+    border: 1px solid #202124;
+}
+
+.input_container {
+    display: flex;
+    
+    justify-content: center;
+    border-radius: 50%;
+    transition: ease-in-out 0.2s;
+    border: none;
+    position: relative;
+}
+
+.input_container input {
+    border: none;
+    background: #202124;
+    width: 584px;
+    border-radius: 24px;
+    padding: 15px;
+}
+
+.input_container input:hover{
+    background: #313134;
+}
+
+.searc_container{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.by_voice{
+    width: 16px;
+    position:absolute;
+    right: 5rem;
+    margin: 0 10px;
+}
+
+.by_image{
+    width: 22px;
+    position: absolute;
+    right: 2rem;
+}
+
+.by_search{
+    width: 20px;
+    position:absolute;
+    left: 1rem;
+}
+.search_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.search_button button{
+    text-align: center;
+    background: #313134;
+    margin: 0 10px;
+    padding: 10px 16px;
+    color: #FFFF;
+    font-size: 14px;
+    border: none;
+    height: 36px;
+    border-radius: 5px;
+    
+    cursor: pointer;
+}
+
+
+
+.search_button button:hover{
+    border: 1px solid #FFFF;
+}
+
+.info_google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_google p{
+    color: #FFFF;
+}
+
+.info_google a{
+    color: #8ab4f8;
+}
+
+.info_google a:hover{
+    text-decoration: underline;
+}
+
+.localization{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: #171717;
+    font-size: 14px;
+    color: #FFFF;
+}
+
+.country{
+    padding: 15px 30px;
+}
+
+.border{
+    border:1px solid #313134;
+}
+
+.footer_navegation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left_navegation{
+    padding: 15px 30px;
+}
+
+.left_navegation a{
+    color: #FFFF;
+    margin-right: 10px;
+}
+
+.left_navegation a:hover{
+    text-decoration: underline;
+}
+
+.right_navegation{
+    padding: 0 30px;
+}
+
+.right_navegation a{
+    color: #FFFF;
+    margin-left: 10px;
+}
+
+.right_navegation a:hover{
+    text-decoration: underline;
+}
+
+@media(max-width:425px){
+    .input_container input{
+        width: 384px;
+    }
+
+    .bn_google{
+        width: 252px;
+        height: 92px;
+        margin: auto;
+    }
+
+    .left_navegation{
+        font-size: 6px;
+        margin-left: 20px;
+    }
+
+    .right_navegation{
+        font-size: 6px;
+        
+    }
+}
+
+@media(max-width:375px){
+    .input_container input{
+        width: 334px;
+    }
+
+    .left_navegation{
+        font-size: 5px; 
+    }
+
+    .right_navegation{
+        font-size: 5px;
+    }
+}
+
+@media(max-width:320px){
+
+    .under{
+        font-size: 13px;
+    }
+
+    .bn_google{
+        width: 212px;
+        height: 82px;
+        margin: auto;
+    }
+    .input_container input{
+        width: 224px;
+    }
+
+    .by_voice{
+        right: -2rem;
+    }
+    .by_image{
+        right: -4rem;
+    }
+
+    .country{
+        font-size: 12px;
+    }
+}
